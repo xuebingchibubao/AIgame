@@ -22,7 +22,7 @@ class ChatBot:
                 model_type="Qwen/QwQ-32B",  # 或者你的具体模型名
                 url='https://api.siliconflow.cn/v1',
                 api_key='sk-qseennfhdprismchczwnkzpohyjmuwgpiaywuclsisgugfvo',
-                model_config_dict={"stream": True}
+                model_config_dict={"stream": True,"temperature":0.9}
             )
         self.model = model
         self.system_prompt = system_prompt
