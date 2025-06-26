@@ -13,7 +13,8 @@ class GodAgent:
                 model_platform=ModelPlatformType.OPENAI_COMPATIBLE_MODEL,
                 model_type="Qwen/QwQ-32B",
                 url='https://api.siliconflow.cn/v1',
-                api_key='sk-qseennfhdprismchczwnkzpohyjmuwgpiaywuclsisgugfvo'
+                api_key='sk-qseennfhdprismchczwnkzpohyjmuwgpiaywuclsisgugfvo',
+                model_config_dict={"temperature":0.9}
             ),
             system_message: str = "你是一位游戏叙事控制者",
             verbose: bool = False
